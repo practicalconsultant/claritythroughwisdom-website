@@ -139,3 +139,34 @@
       section#contact h2 { font-size: 1.2rem; }
       .hero-image { max-height: 300px; }
     }
+
+    .about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.about-profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  flex-shrink: 0;
+}
+.about-content {
+  flex: 1;
+}
+@media (max-width: 700px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .about-profile-pic {
+    margin-bottom: 8px;
+  }
+  .about-content {
+    text-align: center;
+  }
+}
