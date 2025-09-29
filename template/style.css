@@ -1,0 +1,141 @@
+    body {
+      font-family: 'Source Sans Pro', Arial, sans-serif;
+      margin: 0;
+      background: #000;
+      color: #fff;
+      min-height: 100vh;
+    }
+    header {
+      background: #161616;
+      padding: 56px 0 56px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #fff;
+      margin: 0;
+      font-weight: 700;
+    }
+    header p {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: #fff;
+      margin: 16px 0 0 0;
+      font-weight: 400;
+    }
+    .hero-image {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 32px auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    nav {
+      background: #000;
+      text-align: center;
+      padding: 16px 0;
+    }
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      margin: 0 16px;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #161616;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 32px;
+    }
+    section#about h2,
+    section#contact h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 16px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    section#about p {
+      font-family: 'Source Sans Pro', Arial, sans-serif;
+      font-size: 1.2rem;
+      color: #e2e2e2;
+      line-height: 1.6;
+    }
+    section#contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    section#contact label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    section#contact input,
+    section#contact textarea {
+      padding: 10px;
+      border-radius: 4px;
+      border: none;
+      font-size: 1rem;
+      font-family: 'Source Sans Pro', Arial, sans-serif;
+      background: #222;
+      color: #fff;
+      resize: vertical;
+    }
+    section#contact input:focus,
+    section#contact textarea:focus {
+      outline: 2px solid #969696;
+    }
+    section#contact button {
+      background: #969696;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 8px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    section#contact button:hover {
+      background: #fff;
+      color: #161616;
+    }
+    footer {
+      text-align: center;
+      padding: 24px 0;
+      background: #161616;
+      color: #aaa;
+      font-size: 1rem;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      main { padding: 16px; }
+      header h1 { font-size: 1.5rem; }
+      section#about h2,
+      section#contact h2 { font-size: 1.2rem; }
+      .hero-image { max-height: 300px; }
+    }
