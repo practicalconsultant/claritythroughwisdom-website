@@ -18,10 +18,8 @@
   <meta name="twitter:description" content="Empowering Growth Through Insight"/>
   <meta name="twitter:image" content="https://img1.wsimg.com/isteam/getty/2160992699"/>
   <meta name="twitter:image:alt" content="Clarity Through Wisdom"/>
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Montserrat:600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
-  <!-- Main CSS (customize as needed) -->
   <link rel="stylesheet" href="template/style.css">
 </head>
 <body>
@@ -29,17 +27,21 @@
     <h1>Clarity Through Wisdom</h1>
     <p>Empowering Growth Through Insight</p>
   </header>
+
   <nav>
     <a href="#about">About Me</a>
+    <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
   </nav>
-  <main>
+
+  <main class="site-container">
     <img 
       src="https://img1.wsimg.com/isteam/getty/2160992699" 
       alt="Clarity Through Wisdom Hero" 
       class="hero-image"
     />
-    <section id="about">
+
+    <section id="about" class="panel">
       <div class="about-container">
         <img 
           src="images/prof-pic.jpg" 
@@ -50,7 +52,7 @@
           <h2>About Me</h2>
       
           <p>
-            Welcome! I'm Siddeshvara, With over 15 years of Bhakti yoga practice and a decade of experience in financial services, I blend timeless wisdom with professional insight to guide others towards clarity, balance, and conscious, mindful living.
+            Welcome! I'm Siddeshvara. With over 15 years of Bhakti yoga practice and a decade of experience in financial services, I blend timeless wisdom with professional insight to guide others towards clarity, balance, and conscious, mindful living.
           <br><br>  
             Over the past four years, I've mentored and guided individuals, developing a passion for creating supportive communities that empower people to grow, learn, and connect with wisdom. As a Career Dharma coach, I help people discover their natural prosperity and field of work, align it with purpose, and progress toward fulfilling their highest potential.
           <br><br>
@@ -59,9 +61,39 @@
         </div>
       </div>
     </section>
-    <section id="contact">
+
+    <section id="reviews" class="panel">
+      <h2>Reviews</h2>
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>
+            "Sid's guidance helped me find clarity and calm in a chaotic career transition. Deeply grateful."
+          </blockquote>
+          <cite>— A. Patel</cite>
+        </article>
+
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>
+            "I found my session with Sid, thought provoking and very insightful. He has a natural ability to create a safe, non judgemental space to help you, to get to know you! We make so many ‘unconscious’ choices in life, living life a bit like a ball on a roulette wheel. Sid can help us to learn to how to apply principles of timeless wisdom in our day to day lives and in the choices we make towards greater fulfillment."
+          </blockquote>
+          <cite>— Anonymous</cite>
+        </article>
+
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>
+            "Insightful sessions that blend modern career advice with spiritual clarity."
+          </blockquote>
+          <cite>— Pranav</cite>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="panel">
       <h2>Contact</h2>
-      <form id="contactForm">
+      <form id="contactForm" class="contact-form" novalidate>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
 
@@ -71,13 +103,18 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit">Send</button>
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Send</button>
+          <div id="formStatus" class="form-status" aria-live="polite"></div>
+        </div>
       </form>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Clarity Through Wisdom - All Rights Reserved.</p>
   </footer>
-  <script src="../js/main.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
